@@ -1,25 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const App =()=> {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <p>Test</p>
-    </div>
+    <main class="main">
+      <h1 class="main__header">hydrapp</h1>
+      <div class="main__glass">
+        <span class="main__value value__js">0</span>
+      </div>
+      <button class="main__add add__button__js">dodaj szklankę</button>
+      <button class="main__subtract subtract__button__js">usuń szklankę</button>
+    </main>
   );
 }
 
